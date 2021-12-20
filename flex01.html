@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex01</title>
+    <style>
+        *{margin:0;padding:0;}
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        h1{text-align:center;}
+        .par-box{
+            width:1200px;
+            margin:0 auto;
+            border:1px solid black;
+            /* 플랙스 컨테이너 / 플렉서블 박스 */
+            display:flex;
+            /* 주축 가로*/
+            flex-direction:row;
+            /* 주축 가로 거꾸로 */
+            /* flex-direction:row-reverse; */
+            /* 주축 세로 */
+            /* flex-direction:column; */
+            /* 주축 세로 거꾸로 */
+            /* flex-direction:column-reverse; */
+            /* 플랙스 컨테이너 줄바꿈 허용여부 */
+            flex-wrap:nowrap;
+            /* flex-wrap:wrap; */
+        }
+        .par-box{
+            height:300px;
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .child-box{
+            display:block;
+            width:600px;
+            height:150px;
+        }
+        .child-box01{
+            background-color: #f00;
+        }
+        .child-box02{
+            background-color: #0f0;
+        }
+        .child-box03{
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="par-box clearfix">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas, culpa saepe voluptatem alias ipsum quae quis, dignissimos, placeat ut nam. Possimus enim sequi ab officia expedita amet facilis ullam.
+    Dicta veritatis nisi eaque repellat veniam praesentium ullam, delectus beatae sequi, maiores nam sunt velit nesciunt. Debitis ut architecto officia quam nihil. Optio, voluptatem quos unde doloremque quam rem fugiat?
+    Voluptas exercitationem minima, labore non facere vitae rerum consectetur, quibusdam facilis pariatur itaque ab? Ab, eligendi dolorem sint eos alias placeat ea tempora magnam, aliquid est consectetur voluptas, accusantium amet!
+    Excepturi inventore quia rem iure. Placeat obcaecati impedit temporibus totam officiis. Minima provident voluptatum, incidunt reiciendis enim ad sed eum amet aut sint similique harum illo labore eaque ipsam impedit!
+    Quidem, dignissimos! Nostrum dolore officia necessitatibus id tempore! Quam, ea reiciendis! Amet possimus unde beatae ratione nemo odio aliquid! Natus doloremque, ipsa cum accusantium iure commodi at. Aliquam, dolorem aut.
+    Id delectus, dolore sunt a vero iusto aperiam eligendi? Quaerat dolor laudantium fugit corrupti vero odit. Necessitatibus et expedita nihil, sunt ex cumque ut modi laboriosam commodi adipisci dolore asperiores.
+    Quas quasi veritatis hic debitis at saepe, quae doloremque nostrum impedit inventore? Sunt culpa itaque sapiente ab quo in! Totam optio dolorum exercitationem tenetur quo eius iusto cum nesciunt quis?
+    Quo, necessitatibus quis at eum unde neque iure ab nesciunt, natus vitae tempore nihil earum, labore harum. Veritatis, eaque est non dolor soluta accusamus? Quibusdam culpa iure inventore praesentium odio!
+    Suscipit quam est eum esse aperiam ullam nobis aliquid perferendis rem, quia architecto itaque harum neque voluptatibus repellat mollitia, hic in perspiciatis ipsum sed dicta excepturi cupiditate quod quae. Deserunt.
+    Alias maiores corporis magni optio id voluptas! Aperiam facilis ab minima, natus maiores porro ratione quis laborum ea dicta, illum eligendi odit necessitatibus voluptatibus atque cupiditate alias? Ad, id voluptas!</p>
+</body>
+</html>
